@@ -1,5 +1,5 @@
 <div class="guide">
-        	<span>xmimicx(系統管理者)</span>
+        	<span>(系統管理者)</span>
         	<a href="logout.php">登出</a>
             <a href="../">開啟網站</a>
         </div>
