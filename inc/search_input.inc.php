@@ -1,0 +1,1 @@
+<li class="search"><div><input id="search_product" name="search_product" value="<?=urldecode($_GET['q']);?>" type="text" onkeyup="search_product()"/></div></li>
