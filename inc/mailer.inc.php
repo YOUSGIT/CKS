@@ -38,7 +38,7 @@ $mail->Username   = "cksgp@cksgroup.com"; // SMTP account username
 $mail->Password   = "O92dgm9y";        		// SMTP account password
 
 $mail->SetFrom($hostemail	, $hostname	);
-                                                                
+
 $mail->AddReplyTo($hostemail,	$hostname);
 
 $mail->Subject    = $_POST['Subject'];
@@ -47,7 +47,8 @@ $mail->AltBody    = "To view the message, please use an HTML compatible email vi
 
 $mail->MsgHTML($body);
 
-$address = $_POST['email'];
+// $address = $_POST['email'];
+$address = "sales@cks.com.tw";
 $mail->AddAddress($address, $_POST['name']);
 
 //$mail->AddAttachment("images/phpmailer.gif");      // attachment
@@ -58,5 +59,5 @@ if(!$mail->Send()) {
 //	echo $title . $mail->ErrorInfo;
 } else {
 	$title="Thanks for Your Comment!";
-//	echo $title;  
+//	echo $title;
 }
