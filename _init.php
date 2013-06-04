@@ -74,7 +74,7 @@ define('PACK_Image', $root . 'images/user_images/pack/');
 define('BC_Image', $root . 'images/user_images/bc/');
 define('INC_CLASS', 'inc/class/');
 define('IMAGES', $root . 'images/');
-define('WEB', 'http://www.chungho.twmail.cc/CKS/');
+define('WEB', 'http://www.cksgroup.com/');
 
 $image_Prefix = array("s_", "m_", "l_", "ss_", ""); //圖檔名前綴
 #######################################################
