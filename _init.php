@@ -35,27 +35,31 @@ $root_f = '/cksgp/'; #'/CKS/';
 $inPage = pathinfo($_SERVER["PHP_SELF"]);
 define('this_Page', $inPage["basename"]); //本頁檔名
 define('_ROOT', $_SERVER['DOCUMENT_ROOT'] . $root_f); //根目錄
-
+if ($_SERVER['DOCUMENT_ROOT'] != '/var/chroot/home/content/80/9468380/html')
+{
+    header("location:./index.php");
+    exit;
+}
 
 if (file_exists("admin.admin"))
     $root = '../';
 else
     $root = './';
-    
+
 if ($inPage["dirname"] == '/admin')
 {
     // echo $_SESSION['AdmiN'].'<br>';
     // echo md5(md5($_SESSION['AdmiN'])).'<br>';
     // echo $_SESSION['token'];
-    
-    if (! $_SESSION['AdmiN'] || md5(md5($_SESSION['AdmiN'])) != $_SESSION['token'])
+
+    if (!$_SESSION['AdmiN'] || md5(md5($_SESSION['AdmiN'])) != $_SESSION['token'])
     {
         if (!(
                 (($inPage["basename"] == 'logout.php' || $inPage["basename"] == 'logincheck.php') || ($inPage["basename"] == 'index.php'))
                 )
         )
         {
-            header("location: ".$root."admin/logout.php");
+            header("location: " . $root . "admin/logout.php");
             exit;
         }
     }
