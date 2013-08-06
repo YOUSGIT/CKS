@@ -28,7 +28,7 @@ $mail->IsSMTP(); // telling the class to use SMTP
 $mail->Host       = "smtpout.secureserver.net";		// SMTP server
 //$mail->SMTPDebug  = 2;                     	// enables SMTP debug information (for testing)
 											// 1 = errors and messages
-//$mail->CharSet 	  = "utf-8"; //設定郵件編碼 											// 2 = messages only
+$mail->CharSet 	  = "utf-8"; //設定郵件編碼 											// 2 = messages only
 $mail->SMTPAuth   = true;                  	// enable SMTP authentication
 $mail->SMTPSecure = "http";
 $mail->Host       = "smtpout.secureserver.net"; 		// sets the SMTP server
