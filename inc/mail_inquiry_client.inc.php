@@ -13,7 +13,7 @@
     <td align="right" valign="bottom" bgcolor="#000" style="color:#FFF; font-size:9pt;"><?=date("Y/m/d");?></td>    </tr>
   <tr>
     <td colspan="2"><p>Dear <?=$_POST['contact'];?>,</p>
-      <p>Kcdbnt lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></td>
+      </td>
     </tr>
   <tr>
     <td colspan="2" style="font-size:14pt; font-weight:bold; border-bottom:solid 1px #AAA;" bgcolor="#EEE">Inquiry Products</td>

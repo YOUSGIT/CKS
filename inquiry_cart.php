@@ -94,9 +94,7 @@ require_once "./_init.php";
 						  </td>
                         </tr>
                 </table>
-                <h1 class="pencil">NOTICE</h1>
-                <p>The price and availability of items at Amazon.com are subject to change. The Inquiry Cart is a temporary place to store a list of your items and reflects each item's most recent price. <a href="http://www.amazon.com/exec/obidos/tg/browse/-/468468/pop-up/ref=ord_cart_lm" target="AmazonHelp" onclick="return amz_js_PopWin('/exec/obidos/tg/browse/-/468468/pop-up/ref=ord_cart_lm','AmazonHelp','width=340,height=340,resizable=1,scrollbars=1,toolbar=1,status=1');">Learn more</a></p>
-                <p>Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time to pay.</p>
+                
               </div>              
             </div>
 

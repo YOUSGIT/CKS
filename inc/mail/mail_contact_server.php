@@ -16,10 +16,7 @@
   <tr>
     <td width="150" bgcolor="#000"><a href="<?=WEB;?>" target="_blank"><img src="<?=WEB;?>images/header_logo.png" width="152" height="68" border="0" /></a></td>
     <td align="right" valign="bottom" bgcolor="#000" style="color:#FFF; font-size:9pt;"><?=date("Y/m/d");?></td>
-    </tr>
-  <tr>
-    <td colspan="2"><p>Kcdbnt lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></td>
-    </tr>
+    </tr>  
   <tr>
     <td colspan="2" style="font-size:14pt; font-weight:bold; border-bottom:solid 1px #AAA;" bgcolor="#EEE">Questions or Comments</td>
   </tr>
