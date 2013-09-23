@@ -15,6 +15,7 @@ define('Debug', false);
 //========定義資料表之通用名
 define('ADV', 'CKS_adv');
 define('NEWS', 'CKS_news');
+define('COMPANY', 'CKS_company');
 define('BC', 'CKS_class');
 define('PRODUCT', 'CKS_product');
 define('COLOR', 'CKS_product_color');

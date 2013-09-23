@@ -11,9 +11,6 @@ $DOIT = trim($_REQUEST['doit']);
 
 if ($FUNC)
 {
-
-
-
     switch ($FUNC)
     {
 
@@ -25,6 +22,11 @@ if ($FUNC)
         case "news":
 
             $func = new News;
+            break;
+
+        case "company":
+
+            $func = new Company;
             break;
 
         case "bc":
@@ -89,16 +91,14 @@ if ($FUNC)
             break;
 
         default:
-
-
             break;
     }
 }
+
 switch ($DOIT)
 {
 
     case "renew":
-
         $func->renew();
         if ($func->is_sort)
             $func->resort();
@@ -106,7 +106,6 @@ switch ($DOIT)
         break;
 
     case "del":
-
         $r = $func->killu();
         if ($func->is_sort)
             $func->resort();
@@ -118,7 +117,8 @@ switch ($DOIT)
         foreach ($image_Prefix as $v)
             @unlink($_POST['dir'] . $v . $_POST['file']);
 
-        $ret = array('ret' => 'ok');
+        $ret = array(
+            'ret' => 'ok');
 
         echo json_encode($ret);
         exit;
@@ -126,17 +126,14 @@ switch ($DOIT)
         break;
 
     case "move":
-
         $func->move_sequ();
         break;
 
     case "sale":
-
         $func->sale();
         break;
 
     case "status":
-
         $func->status();
         break;
 

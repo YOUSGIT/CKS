@@ -1,6 +1,6 @@
 <?php
 $root="../";
-require_once($root."_init.php"); 
+require_once($root."_init.php");
 define("F",'2');
 define("FS",'1');
 $news=new News();
@@ -16,9 +16,9 @@ $news=new News();
 </head>
 
 <body>
-	<div class="header">    	
+	<div class="header">
     	<?php include_once "inc/guide.inc.php";?>
-       
+
         <div class="toolbar">
         	<div class="group">
             	<input type="button" class="tool icon file-add-b" value="新增新聞" onclick="window.location='news_detail.php';" />
@@ -35,8 +35,8 @@ $news=new News();
         	<div class="left-panel">
             	<ul class="nav">
                 	<li class="active">
-                    	<a href="news_list.php" class="active">新聞列表</a>                        
-                    </li>                                                                   
+                    	<a href="news_list.php" class="active">新聞列表</a>
+                    </li>
                 </ul>
             </div>
         </td>
@@ -46,7 +46,7 @@ $news=new News();
               	<ul class="crumb">
                    <?=$news->crumbs();?>
                 </ul>
-              	<div class="module-list">                	
+              	<div class="module-list">
                	  <table border="0" cellspacing="0" cellpadding="0" class="fix-title"></table>
                     <div class="list-container">
                     <form action="func.php" method="POST" id="form1" >
@@ -59,12 +59,12 @@ $news=new News();
                         	  <th align="left">新聞標題</th>
                         	  <th>建立日期</th>
                         	  <th>編輯</th>
-                            </tr>                           	
-                          <?php 
+                            </tr>
+                          <?php
 						   		 $ret=$news->get_all();
 
 								 for($i=0;$i<count($ret);$i++){
-						   ?>   
+						   ?>
                           <tr>
                             <td width="30" align="center"><input name="delid[<?=$ret[$i]['id'];?>]" type="checkbox" class="select" id="delid[<?=$ret[$i]['id'];?>]" value="1" /></td>
                             <td width="50" align="center"><?=($i+1);?></td>
