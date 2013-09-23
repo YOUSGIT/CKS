@@ -10,6 +10,7 @@
                 <li><a href="news_list.php" <?=(F==2)?'class="active"':'';?>>新聞管理</a></li>
                 <li><a href="product_bcatalog.php" <?=(F==3)?'class="active"':'';?>>商品管理</a></li>
                 <li><a href="inquery_list.php" <?=(F==4)?'class="active"':'';?>>詢價管理</a></li>
+                <li><a href="company_list.php" <?=(F==5)?'class="active"':'';?>>公司簡介</a></li>
             </ul>
             <div class="blank"></div>
         </div>
