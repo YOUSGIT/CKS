@@ -54,8 +54,8 @@ $Company = new Company();
                                         <tr class="fix-title-row">
                                             <th width="30"><input type="checkbox" class="select-all" /></th>
                                             <th align="left">標題</th>
-                                            <th>順序</th>
-                                            <th>編輯</th>
+                                            <th width="100">順序</th>
+                                            <th width="100">編輯</th>
                                         </tr>
                                         <?php
                                         $ret = $Company->get_all();
@@ -67,8 +67,8 @@ $Company = new Company();
                                             ?>
                                             <tr>
                                                 <td width="30" align="center"><input name="delid[<?= $ret[$i]['id']; ?>]" type="checkbox" class="select" id="delid[<?= $ret[$i]['id']; ?>]" value="1" /></td>
-                                                <td width="300" align="center"><?= $ret[$i]['title']; ?></td>
-                                                <td width="50" align="center">
+                                                <td><?= $ret[$i]['title']; ?></td>
+                                                <td width="100" align="center">
                                                     <?php
                                                     if ($i != 0)
                                                     {
